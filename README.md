@@ -19,6 +19,7 @@ The main purpose of this project is to:
 
 ## Features
 
+![img.png](img.png)
 - Enter student ID and student name
 - Store marks for six subjects: Maths, Physics, Hindi, Social, English, and Telugu
 - Validate marks to ensure values are between 0 and 100

@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class StudentManagementSystem {
     public static void main(String... arg){
         Scanner inp = new Scanner(System.in);
-        System.out.println("Student Management System");
 //        ---------------------------------------------
         System.out.println("Enter studentID:");
         String studentID = inp.nextLine();
@@ -15,12 +14,12 @@ public class StudentManagementSystem {
 
 
 //        ------------------------------------------
-        String[] subjectNames= new String[]{"maths", "phy","hindi","social","english","telugu"};
-        int[] marks = new int[6];
+        String[] subjectNames= new String[]{"maths","hindi","social","english"};
+        int[] marks = new int[4];
         int i = 0;
        while(i < subjectNames.length){
 
-            System.out.println("enter Marks for Subject" + subjectNames[i] + ":");
+            System.out.println("Enter Marks for Subject-" + subjectNames[i] + ":");
             int mark = inp.nextInt();
 
                 if(mark>=0 && mark <=100){
