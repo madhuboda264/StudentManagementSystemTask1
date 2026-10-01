@@ -9,7 +9,6 @@ The application is designed to strengthen understanding of variables, operators,
 ## Objectives
 
 The main purpose of this project is to:
-
 - practice Java fundamentals in a real application
 - implement user input handling with the Scanner class
 - use arrays to store subject names and marks
@@ -19,9 +18,8 @@ The main purpose of this project is to:
 
 ## Features
 
-![img.png](img.png)
 - Enter student ID and student name
-- Store marks for six subjects: Maths, Physics, Hindi, Social, English, and Telugu
+- Store marks for four subjects: Maths, Hindi, Social Studies, and English
 - Validate marks to ensure values are between 0 and 100
 - Calculate total marks
 - Calculate average marks
@@ -92,6 +90,18 @@ This is the main class that contains the program logic. It:
    - average marks
    - grade
 
+## Test Cases
+
+### Test Case 1: Valid marks
+The user enters marks within the allowed range for all four subjects: Maths (33), Hindi (55), Social Studies (66), and English (77). The application accepts the values and displays a total of 231, an average of 57.75, and grade D.
+
+![Screenshot of valid marks producing grade D](img.png)
+
+### Test Case 2: Invalid mark is rejected
+The user enters 110 for Hindi, which is above the allowed maximum of 100. The application displays an error and asks for that subject's mark again. After the user enters 79, it accepts the marks and displays a total of 323, an average of 80.75, and grade B.
+
+![Screenshot showing invalid mark rejection and corrected input](img_1.png)
+
 ## Requirements
 
 To run this project, you need:
@@ -117,31 +127,25 @@ Enter studentID:
 S101
 Enter StudentName:
 John
-enter Marks for Subjectmaths:
+Enter Marks for Subject-maths:
 85
-enter Marks for Subjectphy:
+Enter Marks for Subject-hindi:
 90
-enter Marks for Subjecthindi:
+Enter Marks for Subject-social:
 78
-enter Marks for Subjectsocial:
+Enter Marks for Subject-english:
 80
-enter Marks for Subjectenglish:
-88
-enter Marks for Subjecttelugu:
-92
 ------------------------------------------
 Student ID :S101
 Student Name :John
 maths:85
-phy:90
-hindi:78
-social:80
-english:88
-telugu:92
+hindi:90
+social:78
+english:80
 ------------------------------------------
-Total marks = 513
+Total marks = 333
 ------------------------------------------
-avarage marks =85.5
+avarage marks =83.25
 ------------------------------------------
 Grades =B
 ------------------------------------------
